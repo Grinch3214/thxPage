@@ -1,0 +1,313 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+@font-face {
+  font-family: "circelight";
+  src: url("../fonts/circe-light-webfont.woff2") format("woff2"), url("../fonts/circe-light-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  font-family: "circelight";
+  font-size: 20px;
+}
+
+.thxpage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100vh;
+}
+
+@media screen and (max-width: 1024px) {
+  .thxpage {
+    height: auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.thxpage__bg {
+  width: 30%;
+  background: url("../images/desktop_bg.svg") repeat-y;
+  background-size: contain;
+}
+
+@media screen and (max-width: 1024px) {
+  .thxpage__bg {
+    width: 100%;
+    padding-bottom: calc(100% / 6.2);
+    background: url("../images/mobile_bg.svg") no-repeat;
+    background-size: cover;
+  }
+}
+
+.thxpage__inner {
+  width: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (max-width: 1024px) {
+  .thxpage__inner {
+    width: 100%;
+    margin-top: 50px;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+  }
+}
+
+.thxpage__content {
+  max-width: 700px;
+  margin-left: 30px;
+}
+
+@media screen and (max-width: 425px) {
+  .thxpage__content {
+    margin-left: 0;
+    padding: 0 15px;
+  }
+}
+
+.thxpage__logo {
+  display: inline-block;
+  max-width: 111px;
+  max-height: 25px;
+  margin-bottom: 14px;
+}
+
+.thxpage__title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 48px;
+  margin-bottom: 8px;
+}
+
+@media screen and (max-width: 768px) {
+  .thxpage__title {
+    font-size: 42px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .thxpage__title {
+    font-size: 18px;
+    margin-bottom: 5px;
+    margin-top: 34px;
+  }
+}
+
+.thxpage__text {
+  max-width: 380px;
+  line-height: 30px;
+  margin-bottom: 24px;
+}
+
+@media screen and (max-width: 425px) {
+  .thxpage__text {
+    font-size: 14px;
+    line-height: 24px;
+  }
+}
+
+.thxpage__btn {
+  display: inline-block;
+  color: #fff;
+  font-size: 16px;
+  text-decoration: none;
+  padding: 16px 67px;
+  background: #528be6;
+  border-radius: 5px;
+  margin-bottom: 40px;
+}
+
+@media screen and (max-width: 768px) {
+  .thxpage__btn {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .thxpage__btn {
+    padding: 14px 44px;
+  }
+}
+
+.thxpage__follow {
+  font-size: 14px;
+  margin-bottom: 18px;
+}
+
+.thxpage__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.thxpage__item {
+  font-size: 0;
+  margin-right: 43px;
+}
+
+.thxpage__item:last-child {
+  margin-right: 0;
+}
+
+@media screen and (max-width: 425px) {
+  .thxpage__item {
+    margin-right: 27px;
+  }
+}
+
+.thxpage__item-link {
+  display: inline-block;
+  font-size: 5px;
+}
+
+@media screen and (max-width: 425px) {
+  .thxpage__item-link svg {
+    width: 24px;
+    height: 24px;
+  }
+}
